@@ -1,0 +1,18 @@
+.component{
+ @apply w-full max-w-[384px] h-[384px] flex flex-col bg-gray relative items-center text-white p-4 rounded-lg;
+}
+.label{
+ @apply text-center border border-dashed border-greenLight rounded-md w-full h-full flex items-center justify-center cursor-pointer;
+}
+.labelContent{
+ @apply flex flex-col items-center justify-center gap-2;
+}
+.labelImage{
+ @apply w-24 h-24;
+}
+.labelButton{
+ @apply text-lg text-white px-4 py-2 rounded-lg;
+}
+.dragElement{
+ @apply absolute w-full h-full top-0 left-0
+}

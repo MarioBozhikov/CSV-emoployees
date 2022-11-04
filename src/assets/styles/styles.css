@@ -7,8 +7,11 @@
 
 
 @layer utilites{
+  .animation{
+    @apply transition-all ease-in-out duration-300
+  }
   .b-normal{
-    @apply text-lg
+    @apply text-base
   }
   .b-small{
     @apply text-sm
@@ -18,31 +21,41 @@
   }
 }
 
-/* Global */
+/* Global assets */
+.divider{
+  @apply flex flex-row w-full gap-1 items-center justify-center
+}
+.divider .line{
+  @apply w-full h-[0.25px] border-b border-black
+}
 
 /* Buttons */
 .pri-btn{
-
+  @apply text-white bg-greenLight rounded-lg px-4 py-2 w-max
 }
 .sec-btn{
-
+  @apply text-white bg-green rounded-md px-4 py-2 w-1/3
 }
 .file-btn{
-  @apply bg-green b-normal
+  @apply flex flex-col h-max px-4 text-greenLight hover:text-green text-lg b-normal animation;
 }
+.file-btn .line{
+  @apply w-full h-[0.5px] bg-green animation;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, p {
   @apply font-Poppins;
 }
 
 h1{
-
+  @apply text-6xl font-bold
 }
 h2{
 
 }
 h3{
-
+ @apply text-xl
 }
 h4{
 

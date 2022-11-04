@@ -19,6 +19,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
+      },
+      backgroundImage:{
+        'heroWaves': "url('/src/assets/images/hero-pattern.svg')",
       }
     },
   },
