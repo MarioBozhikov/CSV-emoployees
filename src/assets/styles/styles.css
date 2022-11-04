@@ -1,0 +1,53 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilites{
+  .b-normal{
+    @apply text-lg
+  }
+  .b-small{
+    @apply text-sm
+  }
+  .b-small-bold{
+    @apply text-sm font-bold
+  }
+}
+
+/* Global */
+
+/* Buttons */
+.pri-btn{
+
+}
+.sec-btn{
+
+}
+.file-btn{
+  @apply bg-green b-normal
+}
+/* Typography */
+h1, h2, h3, h4, h5, p {
+  @apply font-Poppins;
+}
+
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+
