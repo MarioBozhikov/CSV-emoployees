@@ -1,14 +1,15 @@
 import React, {FC, useContext, useRef, useState} from "react";
+
 import style from "./FileUpload.module.css";
 import fileSvg from "../../assets/images/bracket-add.svg";
 import {parseCSVData} from "../../utils/CSVParser";
-import tableData from "../../context/tableData";
+import TableData from "../../context/tableData";
 
 const FileUpload: FC = () => {
   const [drag, setDrag] = useState(false);
   const [button, setButton] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const {setUserDuo} = useContext(tableData)
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  const {setUserDuo} = useContext(TableData)
 
   // file drag events
   const handleDrag = function (e: React.DragEvent<HTMLFormElement | HTMLDivElement>) {
@@ -37,7 +38,7 @@ const FileUpload: FC = () => {
     e.preventDefault();
     let files = e.target.files
     if (files && files[0]) {
-    parseCSVData({files, setUserDuo});
+      parseCSVData({files, setUserDuo});
     }
   }
 

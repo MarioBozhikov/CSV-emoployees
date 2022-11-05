@@ -1,37 +1,31 @@
-.App {
-  text-align: center;
+
+.app-header {
+ @apply relative bg-heroWaves bg-center bg-cover
+}
+.header-content{
+  @apply relative h-screen w-full px-12 flex flex-col justify-center max-w-screen-2xl mx-auto
+}
+.header-image{
+  @apply absolute bottom-0 right-0 z-0
+}
+.header-text{
+  @apply relative z-10 max-w-lg flex flex-col gap-3 text-start
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.form-wrap{
+  @apply bg-green h-full min-h-screen flex flex-col justify-center items-center
+}
+.form-inner-wrap{
+  @apply flex flex-col md:flex-row h-full gap-6 flex py-20 px-12 justify-center items-center w-full max-w-screen-2xl mx-auto
+}
+.form-content{
+  @apply flex flex-col gap-12 text-start max-w-sm text-white
+}
+ol{
+  @apply flex flex-col gap-3
+}
+ol li{
+  @apply border-b border-oceanBlue
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

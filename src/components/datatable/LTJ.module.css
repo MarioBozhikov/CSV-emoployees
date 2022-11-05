@@ -1,0 +1,15 @@
+.component{
+  @apply w-full bg-white relative overflow-hidden rounded-md max-w-2xl mb-20
+}
+
+.trHead{
+  @apply bg-gray border-b border-grayDark
+}
+
+.trHead th{
+  @apply border-r
+}
+
+.trHead th:last-of-type{
+  @apply border-none
+}
