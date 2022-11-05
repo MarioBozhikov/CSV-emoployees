@@ -1,15 +1,19 @@
 .component{
-  @apply w-full bg-white relative overflow-hidden rounded-md max-w-2xl mb-20
+  @apply w-full bg-white relative overflow-hidden rounded-md max-w-2xl mb-20 shadow-md
 }
 
 .trHead{
   @apply bg-gray border-b border-grayDark
 }
 
-.trHead th{
+.trBody{
+  @apply border-b border-grayDark
+}
+
+.trHead th, .trBody td{
   @apply border-r
 }
 
-.trHead th:last-of-type{
+.trHead th:last-of-type, .trBody td:last-of-type{
   @apply border-none
 }

@@ -1,5 +1,5 @@
 .component{
- @apply w-full max-w-[384px] h-[384px] flex flex-col bg-gray relative items-center text-white p-4 rounded-lg;
+ @apply w-full max-w-[384px] h-[384px] flex flex-col bg-gray relative items-center text-white p-4 rounded-lg shadow-2xl;
 }
 .label{
  @apply text-center border border-dashed border-greenLight rounded-md w-full h-full flex items-center justify-center cursor-pointer;

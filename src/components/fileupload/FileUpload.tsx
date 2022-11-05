@@ -37,9 +37,11 @@ const FileUpload: FC = () => {
   const handleChange = function (e: React.ChangeEvent<HTMLInputElement>){
     e.preventDefault();
     let files = e.target.files
+    console.log(files)
     if (files && files[0]) {
       parseCSVData({files, setUserDuo});
     }
+    e.target.files = null
   }
 
   // button, triggers input click
